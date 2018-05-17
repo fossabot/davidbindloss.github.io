@@ -1,12 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>David Bindloss | Programmer Man</title>
+  <style>
+    #title,
+    #links {
+      text-align: center;
+    }
+
+    #links #link-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    #links #link-list li {
+      display: inline;
+      font-weight: bold;
+    }
+
+    #skills,
+    .nested-list,
+    #employment {
+      list-style: square;
+    }
+
+    main {
+      width: 100%;
+      display: table;
+
+    }
+
+    main section {
+      display: table-cell;
+      width: 50%;
+
+    }
+    
+    #footer {
+      position: fixed;
+      bottom: 0;
+      display: block;
+      text-align: right;
+    }
+
+  </style>
 </head>
+
 <body>
-    <h1>Hi - I'm David. I write code for a living.</h1>
+  <h1 id="title">Hi - I'm David. I write code for a living.</h1>
+  <hr>
+  <section id="links">
+    <ol id="link-list">
+      <li>
+        <a target="_blank" href="https://github.com/DavidBindloss">Github</a> | </li>
+      <li>
+        <a target="_blank" href="https://twitter.com/davidbindloss">Twitter</a> | </li>
+      <li>
+        <a target="_blank" href="https://medium.com/@davidbindloss">Medium</a> | </li>
+      <li>
+        <a target="_blank" href="https://www.linkedin.com/in/davidbindloss">LinkedIn</a> | </li>
+      <li>
+        <a href="mailto:dbindloss+website@gmail.com">Email Me</a>
+      </li>
+    </ol>
+    <hr>
+  </section>
+  <main>
+    <section>
+      <h2>
+        <u>Skills</u>
+      </h2>
+      <ol id="skills">
+        <li>HTML / CSS</li>
+        <li>JavaScript
+          <ol class="nested-list">
+            <li>Node.js</li>
+            <li>Angular 1 &amp; 2</li>
+            <li>Express</li>
+            <li>Electron Desktop</li>
+            <li>Ionic 1</li>
+          </ol>
+        </li>
+        <li>Python
+          <ol class="nested-list">
+            <li>Django &amp; Flask</li>
+            <li>Selenium</li>
+          </ol>
+        </li>
+        <li>Bash Scripting</li>
+        <li>Android Native Apps</li>
+        <li>NGINX</li>
+      </ol>
+    </section>
+    <section>
+      <h2>
+        <u>Recent Work History</u>
+      </h2>
+      <ol id="employment">
+        <li>
+          <a target="_blank" href="https://www.strategicdata.com.au/">Strategic Data</a>
+          <span>
+            <small>
+              <i>(Oct 2016 - Present</i>)</small>
+          </span>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/company/oxygen-interactive-marketing/">Oxygen Interactive</a>
+          <span>
+            <small>
+              <i>(Feb 2015 - Oct 2016)</i>
+            </small>
+          </span>
+        </li>
+        <li>
+          <a target="_blank" href="http://www.regencymedia.com.au/">Regency Media</a>
+          <span>
+            <small>
+              <i>(Apr 2013 - Feb 2015)</i>
+            </small>
+          </span>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <hr>
+
+  <footer id="footer">
+      <small><a href="mailto:dbindloss+website@gmail.com">&copy; David Bindloss - 2018</a></small>
+  </footer>
 </body>
+
 </html>
