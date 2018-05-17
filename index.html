@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Hi! I'm David, I'm a Melbourne Based Programmer with more ideas than time.">
   <title>David Bindloss | Programmer Man</title>
   <style>
+    html {
+      font-family: 'Arial', serif;
+    }
+    body, html {
+      padding: 0;
+      margin: 0;
+    }
     #title,
-    #links {
+    #links,
+    main section h2  {
       text-align: center;
     }
 
     #links #link-list {
       list-style: none;
       padding-left: 0;
+      width: 100%;
+      padding-bottom: 16px;
     }
 
     #links #link-list li {
-      display: inline;
-      font-weight: bold;
+      width: 20%;
+      float: left;
+      text-align: center;
     }
 
     #skills,
@@ -29,40 +40,63 @@
     }
 
     main {
-      width: 100%;
+      max-width: 960px;
       display: table;
+      margin: 0 auto;
+      width: 960px;
+    }
 
+    #skills-content-container,
+    #work-content-container {
+      margin: 0 auto;
+      display: table;
     }
 
     main section {
       display: table-cell;
       width: 50%;
-
-    }
+    }   
     
     #footer {
       position: fixed;
       bottom: 0;
       display: block;
       text-align: right;
+      padding: 5px;
     }
 
+    @media screen and (max-width:960px) {
+      .gone-on-small {
+        display: none;
+      }
+      #title {
+        font-size: 1.5em;
+      }
+      main {
+        max-width: 100%;
+        width: 100%;
+      }
+      main section {
+          display: table-row;
+          width: 100%;
+      }   
+    }
   </style>
 </head>
 
 <body>
-  <h1 id="title">Hi - I'm David. I write code for a living.</h1>
+  <h1 id="title">Hi - I'm David. <span class="gone-on-small">I write code for a living.</span></h1>
   <hr>
   <section id="links">
     <ol id="link-list">
       <li>
-        <a target="_blank" href="https://github.com/DavidBindloss">Github</a> | </li>
+        <a rel="noopener" target="_blank" href="https://github.com/DavidBindloss">Github</a></li>
       <li>
-        <a target="_blank" href="https://twitter.com/davidbindloss">Twitter</a> | </li>
+        <a rel="noopener" target="_blank" href="https://twitter.com/davidbindloss">Twitter</a></li>
       <li>
-        <a target="_blank" href="https://medium.com/@davidbindloss">Medium</a> | </li>
+        <a rel="noopener" target="_blank" href="https://medium.com/@davidbindloss">Medium</a></li>
       <li>
-        <a target="_blank" href="https://www.linkedin.com/in/davidbindloss">LinkedIn</a> | </li>
+        <a rel="noopener" target="_blank" href="https://www.linkedin.com/in/davidbindloss">LinkedIn</a></li>
       <li>
         <a href="mailto:dbindloss+website@gmail.com">Email Me</a>
       </li>
@@ -74,6 +108,7 @@
       <h2>
         <u>Skills</u>
       </h2>
+      <div id="skills-content-container">
       <ol id="skills">
         <li>HTML / CSS</li>
         <li>JavaScript
@@ -95,21 +130,23 @@
         <li>Android Native Apps</li>
         <li>NGINX</li>
       </ol>
+    </div>
     </section>
     <section>
+      <div id="work-content-container">
       <h2>
         <u>Recent Work History</u>
       </h2>
       <ol id="employment">
         <li>
-          <a target="_blank" href="https://www.strategicdata.com.au/">Strategic Data</a>
+          <a target="_blank" rel="noopener" href="https://www.strategicdata.com.au/">Strategic Data</a>
           <span>
             <small>
               <i>(Oct 2016 - Present</i>)</small>
           </span>
         </li>
         <li>
-          <a target="_blank" href="https://www.linkedin.com/company/oxygen-interactive-marketing/">Oxygen Interactive</a>
+          <a target="_blank" rel="noopener" href="https://www.linkedin.com/company/oxygen-interactive-marketing/">Oxygen Interactive</a>
           <span>
             <small>
               <i>(Feb 2015 - Oct 2016)</i>
@@ -117,7 +154,7 @@
           </span>
         </li>
         <li>
-          <a target="_blank" href="http://www.regencymedia.com.au/">Regency Media</a>
+          <a target="_blank" rel="noopener" href="http://www.regencymedia.com.au/">Regency Media</a>
           <span>
             <small>
               <i>(Apr 2013 - Feb 2015)</i>
@@ -125,6 +162,7 @@
           </span>
         </li>
       </ol>
+    </div>
     </section>
   </main>
   <hr>
